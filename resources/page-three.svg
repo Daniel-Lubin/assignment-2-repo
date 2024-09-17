@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <!-- square path -->
+  <rect id="squarePath" x="50" y="50" width="300" height="300" fill="none" stroke="black"/>
+
+  <!-- animation -->
+  <circle cx="10" cy="10" r="10" fill="red">
+    <animateMotion repeatCount="indefinite" dur="10s">
+      <mpath href="#squarePath" />
+    </animateMotion>
+  </circle>
+</svg>

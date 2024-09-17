@@ -1,0 +1,42 @@
+/* Ensure body and html take up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex-grow ensures content takes up space, pushing the footer down */
+body {
+    flex-grow: 1;
+}
+
+/* Content area (the middle part) can grow or shrink as needed */
+body > *:not(footer) {
+    flex-grow: 1;
+}
+
+/* Footer*/
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+a:hover {
+    color: #e74c3c; 
+    text-decoration: wavy; 
+}
