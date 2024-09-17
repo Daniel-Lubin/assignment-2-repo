@@ -1,11 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
-  <!-- square path -->
-  <rect id="squarePath" x="50" y="50" width="300" height="300" fill="none" stroke="black"/>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+   <rect x="10" y="10" width="180" height="180" stroke="black" stroke-width="2" fill="none" />
 
-  <!-- animation -->
-  <circle cx="10" cy="10" r="10" fill="red">
-    <animateMotion repeatCount="indefinite" dur="10s">
+  <!-- Define red circle -->
+  <circle r="10" fill="red">
+    
+    <!-- Define the animation -->
+    <animateMotion dur="4s" repeatCount="indefinite">
       <mpath href="#squarePath" />
     </animateMotion>
   </circle>
+
+  <!-- motion path -->
+  <path id="squarePath" d="M 10,10 L 190,10 L 190,190 L 10,190 Z" fill="none" />
 </svg>
