@@ -79,7 +79,7 @@ h1 {
     margin-top: 20px;
 }
 
-/* Reset vertical margin for first child */
+/* Reset vertical margin  */
 body > *:first-child {
     margin-top: 0;
 }
