@@ -1,4 +1,4 @@
-/* Ensure body and html take up the full height of the viewport */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,12 +6,12 @@ html, body {
     flex-direction: column;
 }
 
-/* Flex-grow ensures content takes up space, pushing the footer down */
+
 body {
     flex-grow: 1;
 }
 
-/* Content area (the middle part) can grow or shrink as needed */
+/* Content area */
 body > *:not(footer) {
     flex-grow: 1;
 }
